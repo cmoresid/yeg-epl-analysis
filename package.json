@@ -1,0 +1,28 @@
+{
+  "name": "yeg-epl-analysis",
+  "version": "1.0.0",
+  "description": "EPL Analysis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmoresid/yeg-epl-analysis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmoresid/yeg-epl-analysis/issues"
+  },
+  "homepage": "https://github.com/cmoresid/yeg-epl-analysis#readme",
+  "dependencies": {
+    "dc": "^2.0.0-beta.27"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14"
+  }
+}
