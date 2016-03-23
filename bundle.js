@@ -50,7 +50,6 @@
 	var d3 = __webpack_require__(10);
 	var crossfilter = __webpack_require__(11);
 
-
 	var libraryHoldChart = dc.rowChart('#library-hold-chart');
 	var holdVolumeChart = dc.barChart('#weekly-volume-chart');
 	var titleHoldVolumeChart = dc.rowChart('#title-hold-chart');

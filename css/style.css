@@ -1,0 +1,15 @@
+#weekly-volume-chart svg g g.axis.y {
+  display: none;
+}
+
+#main-container {
+  margin-top: 60px;
+}
+
+.pad-left {
+  margin-left: 25px;
+}
+
+.indent-left {
+  margin-left: 40px;
+}

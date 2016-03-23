@@ -4,7 +4,6 @@ var dc = require('dc');
 var d3 = require('d3');
 var crossfilter = require('crossfilter');
 
-
 var libraryHoldChart = dc.rowChart('#library-hold-chart');
 var holdVolumeChart = dc.barChart('#weekly-volume-chart');
 var titleHoldVolumeChart = dc.rowChart('#title-hold-chart');
