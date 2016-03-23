@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+  <% include ../partials/nav.ejs %>
+
+    <div id="main-container" class="container-fluid">
+
+      <div class="row">
+        <% include ../partials/charts/library_hold_chart.ejs %>
+          <% include ../partials/charts/title_hold_volume_chart.ejs %>
+      </div>
+
+      <div class="row">
+        <% include ../partials/charts/weekly_volume_chart.ejs %>
+      </div>
+
+      <div class="row">
+        <p class="muted indent-left">select a time range to zoom in</p>
+      </div>
+    </div>
+
+    <% include ../partials/scripts.ejs %>
+</body>
+
+</html>
