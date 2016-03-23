@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+
 module.exports = {
     entry: "./js/index.js",
     output: {
@@ -10,5 +12,11 @@ module.exports = {
             { test: /\.png$/, loader: "url-loader?mimetype=image/png" },
             { test: /\.css$/, loader: 'style-loader!css-loader' }
         ]
-    }
+    },
+    plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: false,
+      mangle: false
+    })
+  ]
 };
