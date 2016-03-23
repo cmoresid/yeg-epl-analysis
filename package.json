@@ -1,7 +1,7 @@
 {
     "name": "yeg-epl-analysis",
     "version": "0.0.1",
-    "description": "Need to update description.",
+    "description": "Visualization of EPL Most Popular Books by Number of Holds.",
     "main": "index.js",
     "scripts": {
         "start": "node index.js"

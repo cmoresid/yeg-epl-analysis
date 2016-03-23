@@ -1,8 +1,6 @@
 {
-  "name": "Node.js Getting Started",
-  "description": "A barebones Node.js app using Express 4",
-  "repository": "https://github.com/heroku/node-js-getting-started",
-  "logo": "http://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["node", "express", "static"],
-  "image": "heroku/nodejs"
+  "name": "YEG EPL Most Popular Books Analysis",
+  "description": "Visualization of EPL Most Popular Books by Number of Holds.",
+  "repository": "https://github.com/cmoresid/yeg-epl-analysis",
+  "keywords": ["EPL", "Data Visualization"],
 }
