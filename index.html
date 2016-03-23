@@ -5,26 +5,81 @@
   <meta charset="utf-8">
   <title></title>
 
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
   <style media="screen">
     #weekly-volume-chart svg g g.axis.y {
       display: none;
+    }
+
+    .pad-left {
+      margin-left: 25px;
+    }
+
+    .indent-left {
+      margin-left: 40px;
+    }
+
+    #main-container {
+      margin-top: 60px;
     }
   </style>
 </head>
 
 <body>
-  <div class="row">
-    <div class="col-md-7">
-      <div id="library-hold-chart"></div>
-    </div>
-    <div class="col-md-5">
-      <div id="title-hold-chart"></div>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="../" class="navbar-brand">EPL Books Analysis</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+
+      </div>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-md-12">
-      <div id="weekly-volume-chart"></div>
+  <div id="main-container" class="container-fluid">
+    <div class="row">
+      <div class="pad-left" id="library-hold-chart">
+        <strong>Total Number of Holds on Popular Books By Library</strong>
+        <div class="reset" style="display: none; max-width: 600px;">Selected: <span class="filter" style="max-width: 700px;"></span></div>
+        <div>
+          <a href="javascript:window.libraryHoldChart.filterAll(); dc.redrawAll();">Reset</a>
+        </div>
+      </div>
+      <div class="pad-left" id="title-hold-chart">
+        <strong>Top 10 Most Popular Books By Number of Holds</strong>
+        <div class="clearfix"></div>
+        <div>
+          <a href="javascript:window.titleHoldVolumeChart.filterAll(); dc.redrawAll();">Reset</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="weekly-volume-chart">
+          <div style="font-size: 10px; display: none;" class="reset pad-left">
+            Date Range:
+            <span style="font-size: 10px;" class="filter"></span>
+            <a class="reset" href="javascript:window.holdVolumeChart.filterAll(); dc.redrawAll();">reset</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="muted indent-left">select a time range to zoom in</p>
+      </div>
     </div>
   </div>
 
